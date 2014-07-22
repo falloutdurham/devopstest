@@ -1,8 +1,8 @@
-= DevOps Test
+#DevOps Test
 
 This is a fairly straightforward exercise that hopefully shows us that you're comfortable with setting up servers and software using configuration management software. You'll be setting up a CentOS Linux box with MySQL, Ruby, and running a very simple Rails app that requires a web server to proxy requests through, and providing us thorough documentation so we can recreate the steps you took to get the application working. You have 48 hours to send us your solution from when we send you this test.
 
-== Instructions
+##Instructions
 
  1. We will be testing everything on using a VM created by Vagrant 1.6.3. This repo includes a sample Vagrantfile that you can use to get started. Start with a CentOS 6.5 image:
 
@@ -28,18 +28,3 @@ This is a fairly straightforward exercise that hopefully shows us that you're co
     * Ensure that pointing a browser to http://{{host}}/users/all displays a list of fake users that can be edited or deleted with no errors.
 
 4. Provide us with documentation and any necessary code to get from steps 1 to 3 on our test VM. Good luck!
-
-CREATE USER 'devops'@'localhost' IDENTIFIED BY 'devopspass';
-CREATE DATABASE devopstest;
-GRANT ALL PRIVILEGES ON devopstest. * TO 'devops';
-
-Gemfile - rails , mysql2, faker
-Update database.yml for passwords
-rails generate scaffold User name:string description:string email:string
-
-
-
-bundle install
-rake db:migrate
-rake db:seed
-bundle exec rails s
