@@ -13,7 +13,7 @@ This is a fairly straightforward exercise that hopefully shows us that you're co
  2. Install and set up your configuration system of choice (Puppet / Chef / Ansible / Salt, etc)
 
  3. Use your CM to:
-
+ 
     * Install MySQL (version 5.x is fine)
     * Create a database 'devopstest' and a user 'devops' (password: devopspass) with full access to that database
     * Install Ruby (ruby-2.0.0-p353)
@@ -27,4 +27,4 @@ This is a fairly straightforward exercise that hopefully shows us that you're co
     * Ensure that MySQL and the Rails application start up on boot
     * Ensure that pointing a browser to http://{{host}}/users/all displays a list of fake users that can be edited or deleted with no errors.
 
-4. Provide us with documentation and any necessary code to get from steps 1 to 3 on our test VM. Good luck!
+Finally, you will need to provide us with the documentation and any necessary code to get from steps 1 to 3 on our test VM. Good luck!
