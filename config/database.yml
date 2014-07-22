@@ -1,0 +1,17 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  database: devopstest
+  # For extra bonus points, inject these in via the environment ;)
+  username: devops
+  password: devopspass
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: dontuse
+
+production:
+  <<: *default
