@@ -4,13 +4,9 @@ This is a an exercise that is intended to shos us that you're comfortable with s
 
 ##Instructions
 
- 1. We will be testing everything on using a VM created by Vagrant 1.6.3. This repo includes a sample Vagrantfile that you can use to get started. Start with a CentOS 6.5 image:
+ 1. We will be testing everything on using a VM created by Vagrant 1.6.3. This repo includes a sample Vagrantfile that you can use to get started. It includes a VM definition (or 'box' in vagrant jargon).
 
-  `vagrant box add "devopstest" https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box`
-
-  (this is the URL to the image specified in the Vagrantfile)
-
- 2. Install and set up your configuration system of choice (Puppet / Chef / Ansible / Salt, etc)
+  2. Install and set up your configuration managment tool of choice (Puppet, Chef, Ansible, Salt, etc)
 
  3. Use your CM to:
  
@@ -19,10 +15,11 @@ This is a an exercise that is intended to shos us that you're comfortable with s
     * Install Ruby (ruby-2.0.0-p353)
     * Clone this git repo to an appropriate location
     * Make sure the database connection in `config/database.yml` is correct
-    * Prepare the Rails app by running `bundle install`
+    * Install the gems needed by the Rails app by running `bundle install`
     * Migrate the database by running `bundle exec rake db:migrate`
     * Seed the database by running `bundle exec rake db:seed`
-    * Start Rails (`bundle exec rails s` - no need to set up Passenger / Unicorn / etc unless you want to - bundle exec rails server with WEBrick is fine)
+    * Start the builtin Rails server(`bundle exec rails s`)
+        * Optional: set up Passenger / Unicorn / etc
     * Use either Apache or Nginx to proxy requests from port 80 to port 3000 where the Rails server is listening
     * Ensure that MySQL and the Rails application start up on boot
     * Ensure that pointing a browser to http://{{host}}/users displays a list of fake users that can be edited or deleted with no errors.
