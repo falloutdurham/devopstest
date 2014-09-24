@@ -24,4 +24,4 @@ This is a an exercise that is intended to show us that you're comfortable with s
     * Ensure that MySQL and the Rails application start up on boot
     * Ensure that pointing a browser to http://{{host}}/users displays a list of fake users that can be edited or deleted with no errors.
 
-Finally, you will need to provide us with the documentation and any necessary code to get from steps 1 to 3 on our test VM. Good luck!
+Finally, you will need to provide us with the documentation and any necessary code to get from steps 1 to 2 on our test VM. Good luck!
