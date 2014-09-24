@@ -1,6 +1,6 @@
 #DevOps Test
 
-This is a an exercise that is intended to shos us that you're comfortable with setting up servers and software using configuration management tools *and* documenting that process. You'll be setting up a CentOS Linux box with MySQL, Ruby, and running a very simple Rails app that requires a web server to proxy requests through, and associated documentation so that we can spin up a VM identical to your own. You have 48 hours to send us your solution from when we send you this test.
+This is a an exercise that is intended to show us that you're comfortable with setting up servers and software using configuration management tools *and* documenting that process. You'll be setting up a CentOS Linux box with MySQL, Ruby, and running a very simple Rails app that requires a web server to proxy requests through, and associated documentation so that we can spin up a VM identical to your own. You have 48 hours to send us your solution from when we send you this test.
 
 ##Instructions
 
