@@ -5,6 +5,8 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @users.first.a_pointless_method with_named_parameter: RUBY_VERSION
+    @users
   end
 
   # GET /users/1

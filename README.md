@@ -9,10 +9,10 @@ This is a an exercise that is intended to show us that you're comfortable with s
   2. Install and set up your configuration managment tool of choice (Puppet, Chef, Ansible, Salt, etc)
 
  3. Use your CM to:
- 
+
     * Install MySQL (version 5.x is fine)
     * Create a database 'devopstest' and a user 'devops' (password: devopspass) with full access to that database
-    * Install Ruby (ruby-2.0.0-p353)
+    * Install Ruby (Ruby 2.1.3 or above)
     * Clone this git repo to an appropriate location
     * Make sure the database connection in `config/database.yml` is correct
     * Install the gems needed by the Rails app by running `bundle install`
